@@ -84,13 +84,13 @@ class ConnectionManager:
                     if currentRequest=='Stop':
                         self.currentService.deviceFlags.STOP_FLAG=True
                         self.currentService.deviceFlags.START_FLAG=False
-                        self.currentService.deviceFlags.CONFIGURE_FLAG=False
-                        print('Session Stopped')
+                        
+                        
                     if currentRequest=='Start':
-                            self.currentService.deviceFlags.STOP_FLAG=True
-                            self.currentService.deviceFlags.START_FLAG=False
-                            self.currentService.deviceFlags.CONNECTION_FLAG=False
-                            print('Session Started')
+                            self.currentService.deviceFlags.STOP_FLAG=False
+                            self.currentService.deviceFlags.START_FLAG=True
+                            
+                            
 
             except Exception as msg:
                 print(msg)

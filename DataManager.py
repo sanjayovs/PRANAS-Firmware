@@ -1,12 +1,16 @@
 from datetime import datetime
 import os
 import pathlib
+import pandas as pd
 
 class LogFileManage:
         def __init__(self,currentService):
                 #Creating and Initializing Log File to which all the session information is written.
                 self.currentService=currentService
-                self.log_file_name='Log_'+str(self.currentService.trialParameters.UID)+'_T'+str(self.currentService.trialParameters.TRIAL)+'_'+currentService.trialParameters.MODE+'_'+currentService.GetCurrentTime(3)+'.log'
+                self.log_file_name='Log_'+str(self.currentService.trialParameters.UID)+\
+                                        '_T'+str(self.currentService.trialParameters.TRIAL)+\
+                                        '_'+currentService.trialParameters.MODE+\
+                                        '_'+currentService.GetCurrentTime(3)+'.log'
                 self.WriteLog('Log started on '+self.currentService.GetCurrentTime(2),0)
                 self.WriteLog('Connected to Server at '+ self.currentService.connectionTime,0)
                 self.currentService=currentService
@@ -25,8 +29,15 @@ class LogFileManage:
                 self.log_file.close()
         
 class DataFileManage:
-        def __init__(self):
-                self
+        def __init__(self,currentService):
+                self.currentService=currentService
+                self.data_file_name='Data_'+str(self.currentService.trialParameters.UID)+\
+                                        '_T'+str(self.currentService.trialParameters.TRIAL)+\
+                                        '_'+currentService.trialParameters.MODE+\
+                                        '_'+currentService.GetCurrentTime(3)+'.csv'
+                self.RecordDataFolder=os.path.join(os.getcwd(),'RecordedData')
+        def Write2CSV(self,dataFrame):
+                dataFrame.to_csv(os.path.join(self.RecordDataFolder,self.data_file_name),index=True,header=True)
 
 
         #self.data_file_name="Data_"+str(UID)+'_T'+str(TrialNo)+'_'+Mode

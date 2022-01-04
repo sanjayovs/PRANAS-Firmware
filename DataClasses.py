@@ -23,6 +23,7 @@ class DeviceFlags:
         CONFIGURE_FLAG: bool = False
         STOP_FLAG:bool = False
         CONNECTION_FLAG:bool =False
+        DAQ_SET:bool=False
 
         
 

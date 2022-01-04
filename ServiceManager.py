@@ -1,46 +1,59 @@
-from DataManager import LogFileManage
+from DataManager import DataFileManage, LogFileManage
 from ConnectionManager import ConnectionManager
 from ModeManager import RecordMode 
 from DataClasses import TrialParameters,DeviceFlags
 from datetime import datetime
+import time
 
 class ServiceManager:
 
         def __init__ (self):
-                
+
+                self.thisConnection=ConnectionManager(self)
+                self.thisConnection.Run_ConnectionHandlerThread()
+                self.connection_Check=False
+                self.trialParameters=TrialParameters()
+                self.deviceFlags=DeviceFlags()
                 while True:
-                        self.trialParameters=TrialParameters()
-                        self.deviceFlags=DeviceFlags()
-                        
-                        
-                        self.thisConnection=ConnectionManager(self)
-                        self.thisConnection.Run_ConnectionHandlerThread()
+
                         #thisConnection.Connection_Thread.start()
                         # This loop waits for connection
-                        while True:
-                                if self.deviceFlags.CONNECTION_FLAG:
-                                        self.connectionTime=self.GetCurrentTime(1)
-                                        print('Connected!')
-                                        break
+                        time.sleep(0.5)
+                        if self.deviceFlags.CONNECTION_FLAG and self.connection_Check==False:
+                                self.connectionTime=self.GetCurrentTime(1)
+                                self.connection_Check=True
+                                print('Connected!')
+                        elif self.deviceFlags.CONNECTION_FLAG==False:
+                                self.connection_Check=False
 
-                        while True:
-                                if self.deviceFlags.CONFIGURE_FLAG:
-                                        self.logFileManage=LogFileManage(self)
-                                        self.logFileManage.WriteLog('Device Configured',1)
-                                        self.logFileManage.WriteLog('UID: '+ self.trialParameters.UID,0)
-                                        self.logFileManage.WriteLog('Mode: '+ self.trialParameters.MODE,0)
-                                        self.logFileManage.WriteLog('Trial: '+ str(self.trialParameters.TRIAL),0)
-                                        self.logFileManage.WriteLog('Duration: '+ str(self.trialParameters.RECORD_DURATION)+' seconds',0)
-                                        self.logFileManage.WriteLog('Sampling Rate: '+ str(self.trialParameters.SAMPLING_RATE),0)
-                                        self.logFileManage.WriteLog('Buffer Size: '+ str(self.trialParameters.BUFFER_SIZE),0)
-                                        self.logFileManage.WriteLog('User: '+ self.trialParameters.USER,0)
-                                        self.logFileManage.WriteLog('-----------------------------------',0)
-                                        break
-                        while True:
 
-                                if self.deviceFlags.STOP_FLAG:
-                                        self.thisConnection.Stop_ConnectionHandlerThread()
-                                        break
+                        if self.deviceFlags.CONFIGURE_FLAG and self.deviceFlags.CONNECTION_FLAG:
+                                self.logFileManage=LogFileManage(self)
+                                self.dataFileManage=DataFileManage(self)
+                                self.logFileManage.WriteLog('Device Configured',1)
+                                self.logFileManage.WriteLog('UID: '+ self.trialParameters.UID,0)
+                                self.logFileManage.WriteLog('Mode: '+ self.trialParameters.MODE,0)
+                                self.logFileManage.WriteLog('Trial: '+ str(self.trialParameters.TRIAL),0)
+                                self.logFileManage.WriteLog('Duration: '+ str(self.trialParameters.RECORD_DURATION)+' seconds',0)
+                                self.logFileManage.WriteLog('Sampling Rate: '+ str(self.trialParameters.SAMPLING_RATE),0)
+                                self.logFileManage.WriteLog('Buffer Size: '+ str(self.trialParameters.BUFFER_SIZE),0)
+                                self.logFileManage.WriteLog('User: '+ self.trialParameters.USER,0)
+                                self.logFileManage.WriteLog('-----------------------------------',0)
+                                self.currentMode=RecordMode(self)
+                                self.deviceFlags.CONFIGURE_FLAG=False
+ 
+                        
+                        if self.deviceFlags.START_FLAG and self.deviceFlags.CONNECTION_FLAG:
+                                self.currentMode.Run()
+                                self.deviceFlags.START_FLAG=False
+                        
+                        if self.deviceFlags.STOP_FLAG and self.deviceFlags.CONNECTION_FLAG:
+                                #self.thisConnection.Stop_ConnectionHandlerThread()
+                                time.sleep(1)
+                                
+                                
+
+                        
                         
 
         def GetCurrentTime(self,tpe):
