@@ -32,10 +32,19 @@ class ModeManager():
                 break
             else:
                 currentTime=time.time()
+                timeElapsed=currentTime-startTime
+                #self.currentService.thisConnection.portalConnection.sendall(str(timeElapsed).encode('ascii'))
+                #self.currentService.thisConnection.portalConnection.settimeout(5)
+                """ try:
+                    self.tokenRcv=self.currentService.thisConnection.portalConnection.recv(1024).decode('ascii')
+                    print(self.tokenRcv)
+                except:                   
+                    self.modeData.STOP_FLAG=True
+                    self.currentService.thisConnection.portalConnection.settimeout(None) """
                 continue
         self.DAQ.ResetDAQ()
         self.logFile.WriteLog('Recording Ended ',1)
-        self.logFile.WriteLog('Data Recording Complete for a Duration of '+str(int(self.currentService.trialParameters.RECORD_DURATION))+'s',0)
+        self.logFile.WriteLog('Data Recording Complete for a Duration of '+str(int(timeElapsed))+'s',0)
         self.logFile.WriteLog('Final Data Frame Size:'+str(self.DAQ.recDataFrame.shape),0)
         self.DAQ.recDataFrame.index.name='Samples'
         self.currentService.dataFileManage.Write2CSV(self.DAQ.recDataFrame)
