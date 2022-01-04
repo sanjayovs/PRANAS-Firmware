@@ -19,25 +19,39 @@ class ServiceManager:
                         # This loop waits for connection
                         while True:
                                 if self.deviceFlags.CONNECTION_FLAG:
-                                        self.connectionTime=self.GetCurrentTime()
+                                        self.connectionTime=self.GetCurrentTime(1)
                                         print('Connected!')
                                         break
 
                         while True:
-                                if self.deviceFlags.CONNECTION_FLAG:
-                                        print('Config Complete')
+                                if self.deviceFlags.CONFIGURE_FLAG:
                                         self.logFileManage=LogFileManage(self)
-                                        self.logFileManage.WriteLog()
+                                        self.logFileManage.WriteLog('Device Configured',1)
+                                        self.logFileManage.WriteLog('UID: '+ self.trialParameters.UID,0)
+                                        self.logFileManage.WriteLog('Mode: '+ self.trialParameters.MODE,0)
+                                        self.logFileManage.WriteLog('Trial: '+ str(self.trialParameters.TRIAL),0)
+                                        self.logFileManage.WriteLog('Duration: '+ str(self.trialParameters.RECORD_DURATION)+' seconds',0)
+                                        self.logFileManage.WriteLog('Sampling Rate: '+ str(self.trialParameters.SAMPLING_RATE),0)
+                                        self.logFileManage.WriteLog('Buffer Size: '+ str(self.trialParameters.BUFFER_SIZE),0)
+                                        self.logFileManage.WriteLog('User: '+ self.trialParameters.USER,0)
+                                        self.logFileManage.WriteLog('-----------------------------------',0)
+                                        break
+                        while True:
 
                                 if self.deviceFlags.STOP_FLAG:
                                         self.thisConnection.Stop_ConnectionHandlerThread()
                                         break
                         
 
-        def GetCurrentTime(self):
+        def GetCurrentTime(self,tpe):
                 #Gets current time and returns in string and integer format
                 dt_now=datetime.now()
-                return str(10000000000*dt_now.year+100000000*dt_now.month+1000000*dt_now.day+10000*dt_now.hour+100*dt_now.minute+dt_now.second)                
+                if tpe==1:
+                       return str(dt_now.hour)+':'+str(dt_now.minute)+':'+str(dt_now.second)
+                if tpe==2:
+                        return str(dt_now.month)+'/'+str(dt_now.day)+'/'+str(dt_now.year) 
+                if tpe==3:
+                        return str(10000000000*dt_now.year+100000000*dt_now.month+1000000*dt_now.day+10000*dt_now.hour+100*dt_now.minute+dt_now.second)                
 
 
 

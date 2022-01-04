@@ -51,17 +51,17 @@ class ConnectionManager:
                     #self.logFile.WriteLog('Acknowledgement received from Server at '+str(self.logFile.GetCurrentTime()[0]))
                 self.portalConnection.sendall(b'Connection Acknowledgement')
                 self.currentService.deviceFlags.CONNECTION_FLAG=True
-
+                
                 while self.RUNCONNECTION_THREAD:
                     sleep(0.5)
                     currentRequest=self.portalConnection.recv(1024).decode('ascii')
                     if currentRequest=='Configuration':
                         self.currentService.deviceFlags.START_FLAG=False
                         self.currentService.deviceFlags.STOP_FLAG=False
-                        print('Configuring')
+                        print('Config Request')
                         sleep(0.3)
                         self.portalConnection.sendall(b'Ready')
-                        print("Waiting for Config")
+                        
                         sleep(self.sleepIntervalTime)
                         self.currentService.trialParameters.UID=self.portalConnection.recv(2096).decode('ascii')
                         self.BreakTimeAck()
@@ -79,7 +79,7 @@ class ConnectionManager:
                         self.BreakTimeAck()
                         sleep(0.4)
                         self.portalConnection.sendall(b'Configuration Complete!')
-                        self.currentService.deviceFlags.ConfigureFlag=True
+                        self.currentService.deviceFlags.CONFIGURE_FLAG=True
  
                     if currentRequest=='Stop':
                         self.currentService.deviceFlags.STOP_FLAG=True

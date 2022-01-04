@@ -5,14 +5,20 @@ import pathlib
 class LogFileManage:
         def __init__(self,currentService):
                 #Creating and Initializing Log File to which all the session information is written.
-                self.log_file_name=str(currentService.trialParameters.UID)+'_T'+str(currentService.trialParameters.TrialNo)+'_'+currentService.trialParameters.Mode+'.log'
-                self.WriteLog('Started at '+ currentService.connectionTime)
-                
+                self.currentService=currentService
+                self.log_file_name='Log_'+str(self.currentService.trialParameters.UID)+'_T'+str(self.currentService.trialParameters.TRIAL)+'_'+currentService.trialParameters.MODE+'_'+currentService.GetCurrentTime(3)+'.log'
+                self.WriteLog('Log started on '+self.currentService.GetCurrentTime(2),0)
+                self.WriteLog('Connected to Server at '+ self.currentService.connectionTime,0)
+                self.currentService=currentService
 
-        def WriteLog(self, writeString):
+        def WriteLog(self, writeString, tpe):
                 # Writes any string passed as argument to the session's log file opened initially
+                if tpe==0:
+                        writeString=writeString
+                elif tpe==1:
+                        writeString=self.currentService.GetCurrentTime(1)+':'+str(writeString)
+                
                 print(writeString)
-                writeString=str(writeString)
                 logFileFolder=os.path.abspath(os.getcwd())+'/logs'
                 self.log_file = open(os.path.join(logFileFolder,self.log_file_name),"a")
                 self.log_file.writelines(writeString+"\n")
