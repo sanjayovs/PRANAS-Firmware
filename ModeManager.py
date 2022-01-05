@@ -21,7 +21,7 @@ class ModeManager():
         currentTime=time.time()
         self.logFile.WriteLog('Recording Started',1)
         self.DAQ.StartDAQ()
-        while currentTime<=endTime and self.modeData.STOP_FLAG==False: #0.2 is the compensation for delays
+        while currentTime<=endTime and self.modeData.STOP_FLAG==False and self.modeData.CONNECTION_FLAG: #0.2 is the compensation for delays
             msg,self.total_samples_read=self.DAQ.ScanDAQ(self.total_samples_read,nebState)
             self.logFile.WriteLog('Time Elapsed (s):'+str(int(currentTime-startTime)+1)+' of '+str(self.currentService.trialParameters.RECORD_DURATION),True)
             if msg=='HardwareOvr':
@@ -43,6 +43,9 @@ class ModeManager():
                     self.currentService.thisConnection.portalConnection.settimeout(None) """
                 continue
         self.DAQ.ResetDAQ()
+        if self.modeData.CONNECTION_FLAG:
+            self.currentService.thisConnection.SendData2Server('Recording Complete!')
+        
         self.logFile.WriteLog('Recording Ended ',1)
         self.logFile.WriteLog('Data Recording Complete for a Duration of '+str(int(timeElapsed))+'s',0)
         self.logFile.WriteLog('Final Data Frame Size:'+str(self.DAQ.recDataFrame.shape),0)

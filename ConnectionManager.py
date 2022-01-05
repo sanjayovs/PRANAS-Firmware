@@ -36,6 +36,12 @@ class ConnectionManager:
         self.portalConnection.sendall(b'Ok')
         sleep(self.sleepIntervalTime)
 
+    def SendData2Server(self,sendData):
+        self.portalConnection.sendall(str(sendData).encode('ascii'))
+        sleep(self.sleepIntervalTime)
+    
+    def RecvDataFromServer(self):
+        return str(self.portalConnection.recv(1024).decode('ascii'))
     
     def ConnectionHandlerThread(self):
         while self.RUNCONNECTION_THREAD:
@@ -95,7 +101,7 @@ class ConnectionManager:
             except Exception as msg:
                 print(msg)
                 print("Connection Failed")
-                self.CONNECTION_FLAG=False
+                self.currentService.deviceFlags.CONNECTION_FLAG=False
                 
 
 
