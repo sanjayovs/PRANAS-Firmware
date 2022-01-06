@@ -24,6 +24,7 @@ class DeviceFlags:
         STOP_FLAG:bool = False
         CONNECTION_FLAG:bool =False
         DAQ_SET:bool=False
+        SEND_FILE:bool=False
 
         
 

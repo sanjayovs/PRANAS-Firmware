@@ -4,7 +4,7 @@ from ModeManager import RecordMode
 from DataClasses import TrialParameters,DeviceFlags
 from datetime import datetime
 import time
-
+import os
 class ServiceManager:
 
         def __init__ (self):
@@ -51,7 +51,12 @@ class ServiceManager:
                                 #self.thisConnection.Stop_ConnectionHandlerThread()
                                 time.sleep(1)
                                 
-                                
+                        if self.deviceFlags.SEND_FILE and self.deviceFlags.CONNECTION_FLAG:
+                                self.thisConnection.SendFile(os.path.join(self.logFileManage.logFileFolder,self.logFileManage.log_file_name))
+                                time.sleep(5)
+
+                                self.thisConnection.SendFile(os.path.join(self.dataFileManage.RecordDataFolder,self.dataFileManage.data_file_name))
+
 
                         
                         

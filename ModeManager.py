@@ -50,6 +50,7 @@ class ModeManager():
         self.logFile.WriteLog('Data Recording Complete for a Duration of '+str(int(timeElapsed))+'s',0)
         self.logFile.WriteLog('Final Data Frame Size:'+str(self.DAQ.recDataFrame.shape),0)
         self.DAQ.recDataFrame.index.name='Samples'
+
         self.currentService.dataFileManage.Write2CSV(self.DAQ.recDataFrame)
         
 

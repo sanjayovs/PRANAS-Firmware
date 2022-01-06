@@ -42,6 +42,16 @@ class ConnectionManager:
     
     def RecvDataFromServer(self):
         return str(self.portalConnection.recv(1024).decode('ascii'))
+
+    def SendFile(self,fileName):
+        fileRead=open(fileName,'rb')
+        dataRead=fileRead.read(10485760)
+        self.portalConnection.send(dataRead)
+        fileRead.close()
+        sleep(5)
+
+        self.currentService.deviceFlags.SEND_FILE=False
+
     
     def ConnectionHandlerThread(self):
         while self.RUNCONNECTION_THREAD:
@@ -95,6 +105,13 @@ class ConnectionManager:
                     if currentRequest=='Start':
                             self.currentService.deviceFlags.STOP_FLAG=False
                             self.currentService.deviceFlags.START_FLAG=True
+
+                    if currentRequest=='Send Last File':
+                        print('File Request')
+                        self.portalConnection.sendall(b'Ready')
+                        sleep(2)
+                        self.currentService.deviceFlags.SEND_FILE=True
+
                             
                             
 

@@ -23,8 +23,8 @@ class LogFileManage:
                         writeString=self.currentService.GetCurrentTime(1)+':'+str(writeString)
                 
                 print(writeString)
-                logFileFolder=os.path.abspath(os.getcwd())+'/logs'
-                self.log_file = open(os.path.join(logFileFolder,self.log_file_name),"a")
+                self.logFileFolder=os.path.abspath(os.getcwd())+'/logs'
+                self.log_file = open(os.path.join(self.logFileFolder,self.log_file_name),"a")
                 self.log_file.writelines(writeString+"\n")
                 self.log_file.close()
         
@@ -38,7 +38,9 @@ class DataFileManage:
                 self.RecordDataFolder=os.path.join(os.getcwd(),'RecordedData')
         def Write2CSV(self,dataFrame):
                 dataFrame.to_csv(os.path.join(self.RecordDataFolder,self.data_file_name),index=True,header=True)
-
+        
+        def ReadFrmCSV(self,fileName):
+                return pd.read_csv(fileName)
 
         #self.data_file_name="Data_"+str(UID)+'_T'+str(TrialNo)+'_'+Mode
 
