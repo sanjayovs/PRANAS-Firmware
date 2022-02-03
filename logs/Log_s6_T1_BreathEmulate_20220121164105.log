@@ -1,0 +1,18 @@
+Log started on 1/21/2022
+Connected to Server at 16:40:55
+16:41:5:Device Configured
+UID: s6
+Mode: BreathEmulate
+Trial: 1
+Duration: 30 seconds
+Sampling Rate: 1000
+Buffer Size: 1000
+User: Sanjay Sarma O V
+-----------------------------------
+Selected MCC 118 HAT device at address:0
+Device in continous scan mode
+Channels: 0, 1, 2,  
+Requested Scan Rate: 1000 
+Actual Scan Rate: 1000.0 
+Step Durations:20,30,10,15,10,10,10
+Nebulizer States:0,1,0,1,0,1,0

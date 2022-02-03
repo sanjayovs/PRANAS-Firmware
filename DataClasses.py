@@ -12,7 +12,9 @@ class TrialParameters:
         USER: str ="Computer"
         MODE:str="Combined"
         PORT_Server: int = 9000
-        IP_Server: str = "192.168.0.100"
+        IP_Server: str = "192.168.72.199"
+        SEQUENCE="0, 1, 0, 1, 0, 1, 0"
+        SEQUENCE_DURATION="20,30,20,30,20,20,20"
 
 
 @dataclass

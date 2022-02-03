@@ -1,0 +1,131 @@
+Log started on 1/21/2022
+Connected to Server at 17:18:7
+17:18:15:Device Configured
+UID: sdfd
+Mode: BreathEmulate
+Trial: 1
+Duration: 105 seconds
+Sampling Rate: 1000
+Buffer Size: 1000
+User: Sanjay Sarma O V
+-----------------------------------
+Step Durations:20,30,10,15,10,10,10
+Nebulizer States:0,1,0,1,0,1,0
+Selected MCC 118 HAT device at address:0
+Device in continous scan mode
+Channels: 0, 1, 2,  
+Requested Scan Rate: 1000 
+Actual Scan Rate: 1000.0 
+17:18:16:Recording Started
+17:18:17:Nebulizer Switched, State:Off
+17:18:17:Time Elapsed (s):1 of 105
+17:18:18:Time Elapsed (s):2 of 105
+17:18:19:Time Elapsed (s):3 of 105
+17:18:20:Time Elapsed (s):4 of 105
+17:18:21:Time Elapsed (s):5 of 105
+17:18:22:Time Elapsed (s):6 of 105
+17:18:23:Time Elapsed (s):7 of 105
+17:18:24:Time Elapsed (s):8 of 105
+17:18:25:Time Elapsed (s):9 of 105
+17:18:26:Time Elapsed (s):10 of 105
+17:18:27:Time Elapsed (s):11 of 105
+17:18:28:Time Elapsed (s):12 of 105
+17:18:29:Time Elapsed (s):13 of 105
+17:18:30:Time Elapsed (s):14 of 105
+17:18:31:Time Elapsed (s):15 of 105
+17:18:32:Time Elapsed (s):16 of 105
+17:18:33:Time Elapsed (s):17 of 105
+17:18:34:Time Elapsed (s):18 of 105
+17:18:35:Time Elapsed (s):19 of 105
+17:18:36:Time Elapsed (s):20 of 105
+17:18:37:State Duration Actual Time:20 off 20
+17:18:37:Time Elapsed (s):21 of 105
+17:18:37:Nebulizer Switched, State:On
+17:18:38:Time Elapsed (s):22 of 105
+17:18:39:Time Elapsed (s):23 of 105
+17:18:40:Time Elapsed (s):24 of 105
+17:18:41:Time Elapsed (s):25 of 105
+17:18:42:Time Elapsed (s):26 of 105
+17:18:43:Time Elapsed (s):27 of 105
+17:18:44:Time Elapsed (s):28 of 105
+17:18:45:Time Elapsed (s):29 of 105
+17:18:46:Time Elapsed (s):30 of 105
+17:18:47:Time Elapsed (s):31 of 105
+17:18:48:Time Elapsed (s):32 of 105
+17:18:49:Time Elapsed (s):33 of 105
+17:18:50:Time Elapsed (s):34 of 105
+17:18:51:Time Elapsed (s):35 of 105
+17:18:52:Time Elapsed (s):36 of 105
+17:18:53:Time Elapsed (s):37 of 105
+17:18:54:Time Elapsed (s):38 of 105
+17:18:55:Time Elapsed (s):39 of 105
+17:18:56:Time Elapsed (s):40 of 105
+17:18:57:Time Elapsed (s):41 of 105
+17:18:58:Time Elapsed (s):42 of 105
+17:18:59:Time Elapsed (s):43 of 105
+17:19:0:Time Elapsed (s):44 of 105
+17:19:1:Time Elapsed (s):45 of 105
+17:19:2:Time Elapsed (s):46 of 105
+17:19:3:Time Elapsed (s):47 of 105
+17:19:4:Time Elapsed (s):48 of 105
+17:19:5:Time Elapsed (s):49 of 105
+17:19:6:Time Elapsed (s):50 of 105
+17:19:7:Time Elapsed (s):51 of 105
+17:19:7:State Duration Actual Time:30 off 30
+17:19:8:Time Elapsed (s):52 of 105
+17:19:9:Time Elapsed (s):53 of 105
+17:19:10:Time Elapsed (s):54 of 105
+17:19:11:Time Elapsed (s):55 of 105
+17:19:12:Time Elapsed (s):56 of 105
+17:19:13:Time Elapsed (s):57 of 105
+17:19:14:Time Elapsed (s):58 of 105
+17:19:15:Time Elapsed (s):59 of 105
+17:19:16:Time Elapsed (s):60 of 105
+17:19:17:Time Elapsed (s):61 of 105
+17:19:18:Time Elapsed (s):62 of 105
+17:19:19:Time Elapsed (s):63 of 105
+17:19:20:Time Elapsed (s):64 of 105
+17:19:21:Time Elapsed (s):65 of 105
+17:19:22:Time Elapsed (s):66 of 105
+17:19:23:Time Elapsed (s):67 of 105
+17:19:24:Time Elapsed (s):68 of 105
+17:19:25:Time Elapsed (s):69 of 105
+17:19:26:Time Elapsed (s):70 of 105
+17:19:27:Time Elapsed (s):71 of 105
+17:19:28:Time Elapsed (s):72 of 105
+17:19:29:Time Elapsed (s):73 of 105
+17:19:30:Time Elapsed (s):74 of 105
+17:19:31:Time Elapsed (s):75 of 105
+17:19:32:Time Elapsed (s):76 of 105
+17:19:33:Time Elapsed (s):77 of 105
+17:19:34:Time Elapsed (s):78 of 105
+17:19:35:Time Elapsed (s):79 of 105
+17:19:36:Time Elapsed (s):80 of 105
+17:19:37:Time Elapsed (s):81 of 105
+17:19:38:Time Elapsed (s):82 of 105
+17:19:39:Time Elapsed (s):83 of 105
+17:19:40:Time Elapsed (s):84 of 105
+17:19:41:Time Elapsed (s):85 of 105
+17:19:42:Time Elapsed (s):86 of 105
+17:19:43:Time Elapsed (s):87 of 105
+17:19:44:Time Elapsed (s):88 of 105
+17:19:45:Time Elapsed (s):89 of 105
+17:19:46:Time Elapsed (s):90 of 105
+17:19:47:Time Elapsed (s):91 of 105
+17:19:48:Time Elapsed (s):92 of 105
+17:19:49:Time Elapsed (s):93 of 105
+17:19:50:Time Elapsed (s):94 of 105
+17:19:51:Time Elapsed (s):95 of 105
+17:19:52:Time Elapsed (s):96 of 105
+17:19:53:Time Elapsed (s):97 of 105
+17:19:54:Time Elapsed (s):98 of 105
+17:19:55:Time Elapsed (s):99 of 105
+17:19:56:Time Elapsed (s):100 of 105
+17:19:57:Time Elapsed (s):101 of 105
+17:19:58:Time Elapsed (s):102 of 105
+17:19:59:Time Elapsed (s):103 of 105
+17:20:0:Time Elapsed (s):104 of 105
+17:20:1:Time Elapsed (s):105 of 105
+17:20:2:Recording Ended 
+Data Recording Complete for a Duration of 105s
+Final Data Frame Size:(105000, 4)

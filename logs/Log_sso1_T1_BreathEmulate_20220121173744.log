@@ -1,0 +1,51 @@
+Log started on 1/21/2022
+Connected to Server at 17:37:36
+17:37:44:Device Configured
+UID: sso1
+Mode: BreathEmulate
+Trial: 1
+Duration: 105 seconds
+Sampling Rate: 1000
+Buffer Size: 1000
+User: Sanjay Sarma O V
+-----------------------------------
+Step Durations:20,30,10,15,10,10,10
+Nebulizer States:0, 1, 0, 1, 0, 1, 0
+Selected MCC 118 HAT device at address:0
+Device in continous scan mode
+Channels: 0, 1, 2,  
+Requested Scan Rate: 1000 
+Actual Scan Rate: 1000.0 
+17:37:45:Recording Started
+17:37:47:Time Elapsed (s):1 of 105
+17:37:47:Time Elapsed (s):2 of 105
+17:37:48:Time Elapsed (s):3 of 105
+17:37:49:Time Elapsed (s):4 of 105
+17:37:50:Time Elapsed (s):5 of 105
+17:37:51:Time Elapsed (s):6 of 105
+17:37:52:Time Elapsed (s):7 of 105
+17:37:53:Time Elapsed (s):8 of 105
+17:37:54:Time Elapsed (s):9 of 105
+17:37:55:Time Elapsed (s):10 of 105
+17:37:56:Time Elapsed (s):11 of 105
+17:37:57:Time Elapsed (s):12 of 105
+17:37:58:Time Elapsed (s):13 of 105
+17:37:59:Time Elapsed (s):14 of 105
+17:38:0:Time Elapsed (s):15 of 105
+17:38:1:Time Elapsed (s):16 of 105
+17:38:2:Time Elapsed (s):17 of 105
+17:38:3:Time Elapsed (s):18 of 105
+17:38:4:Time Elapsed (s):19 of 105
+17:38:5:Time Elapsed (s):20 of 105
+17:38:6:Time Elapsed (s):21 of 105
+17:38:7:Time Elapsed (s):22 of 105
+17:38:8:Time Elapsed (s):23 of 105
+17:38:9:Time Elapsed (s):24 of 105
+17:38:10:Time Elapsed (s):25 of 105
+17:38:11:Time Elapsed (s):26 of 105
+17:38:12:Time Elapsed (s):27 of 105
+17:38:13:Time Elapsed (s):28 of 105
+17:38:14:Time Elapsed (s):29 of 105
+17:38:15:Time Elapsed (s):30 of 105
+17:38:16:Time Elapsed (s):31 of 105
+17:38:17:Time Elapsed (s):32 of 105

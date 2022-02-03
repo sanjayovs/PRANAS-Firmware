@@ -1,0 +1,50 @@
+Log started on 1/12/2022
+Connected to Server at 11:59:31
+12:6:18:Device Configured
+UID: SSO_GREEN_t1
+Mode: Static
+Trial: 1
+Duration: 30 seconds
+Sampling Rate: 1000
+Buffer Size: 1000
+User: Sanjay Sarma O V
+-----------------------------------
+Selected MCC 118 HAT device at address:0
+Device in continous scan mode
+Channels: 0, 1, 2,  
+Requested Scan Rate: 1000 
+Actual Scan Rate: 1000.0 
+12:6:19:Recording Started
+12:6:20:Time Elapsed (s):1 of 30
+12:6:21:Time Elapsed (s):2 of 30
+12:6:22:Time Elapsed (s):3 of 30
+12:6:23:Time Elapsed (s):4 of 30
+12:6:24:Time Elapsed (s):5 of 30
+12:6:25:Time Elapsed (s):6 of 30
+12:6:26:Time Elapsed (s):7 of 30
+12:6:27:Time Elapsed (s):8 of 30
+12:6:28:Time Elapsed (s):9 of 30
+12:6:29:Time Elapsed (s):10 of 30
+12:6:30:Time Elapsed (s):11 of 30
+12:6:31:Time Elapsed (s):12 of 30
+12:6:32:Time Elapsed (s):13 of 30
+12:6:33:Time Elapsed (s):14 of 30
+12:6:34:Time Elapsed (s):15 of 30
+12:6:35:Time Elapsed (s):16 of 30
+12:6:36:Time Elapsed (s):17 of 30
+12:6:37:Time Elapsed (s):18 of 30
+12:6:38:Time Elapsed (s):19 of 30
+12:6:39:Time Elapsed (s):20 of 30
+12:6:40:Time Elapsed (s):21 of 30
+12:6:41:Time Elapsed (s):22 of 30
+12:6:42:Time Elapsed (s):23 of 30
+12:6:43:Time Elapsed (s):24 of 30
+12:6:44:Time Elapsed (s):25 of 30
+12:6:45:Time Elapsed (s):26 of 30
+12:6:46:Time Elapsed (s):27 of 30
+12:6:47:Time Elapsed (s):28 of 30
+12:6:48:Time Elapsed (s):29 of 30
+12:6:49:Time Elapsed (s):30 of 30
+12:6:49:Recording Ended 
+Data Recording Complete for a Duration of 30s
+Final Data Frame Size:(30000, 4)

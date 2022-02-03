@@ -1,0 +1,182 @@
+Log started on 1/21/2022
+Connected to Server at 21:5:30
+21:13:9:Device Configured
+UID: KPPA1
+Mode: BreathEmulate
+Trial: 1
+Duration: 160 seconds
+Sampling Rate: 1000
+Buffer Size: 1000
+User: Sanjay Sarma O V
+-----------------------------------
+Step Durations:20,30,20,30,20,20,20
+Nebulizer States:0, 1, 0, 1, 0, 1, 0
+Selected MCC 118 HAT device at address:0
+Device in continous scan mode
+Channels: 0, 1, 2,  
+Requested Scan Rate: 1000 
+Actual Scan Rate: 1000.0 
+21:13:10:Recording Started
+21:13:12:Time Elapsed (s):1 of 160
+21:13:12:Time Elapsed (s):2 of 160
+21:13:13:Time Elapsed (s):3 of 160
+21:13:14:Time Elapsed (s):4 of 160
+21:13:15:Time Elapsed (s):5 of 160
+21:13:16:Time Elapsed (s):6 of 160
+21:13:17:Time Elapsed (s):7 of 160
+21:13:18:Time Elapsed (s):8 of 160
+21:13:19:Time Elapsed (s):9 of 160
+21:13:20:Time Elapsed (s):10 of 160
+21:13:21:Time Elapsed (s):11 of 160
+21:13:22:Time Elapsed (s):12 of 160
+21:13:23:Time Elapsed (s):13 of 160
+21:13:24:Time Elapsed (s):14 of 160
+21:13:25:Time Elapsed (s):15 of 160
+21:13:26:Time Elapsed (s):16 of 160
+21:13:27:Time Elapsed (s):17 of 160
+21:13:28:Time Elapsed (s):18 of 160
+21:13:29:Time Elapsed (s):19 of 160
+21:13:30:Time Elapsed (s):20 of 160
+21:13:32:Time Elapsed (s):21 of 160
+21:13:32:Time Elapsed (s):22 of 160
+21:13:33:Time Elapsed (s):23 of 160
+21:13:34:Time Elapsed (s):24 of 160
+21:13:35:Time Elapsed (s):25 of 160
+21:13:36:Time Elapsed (s):26 of 160
+21:13:37:Time Elapsed (s):27 of 160
+21:13:38:Time Elapsed (s):28 of 160
+21:13:39:Time Elapsed (s):29 of 160
+21:13:40:Time Elapsed (s):30 of 160
+21:13:41:Time Elapsed (s):31 of 160
+21:13:42:Time Elapsed (s):32 of 160
+21:13:43:Time Elapsed (s):33 of 160
+21:13:44:Time Elapsed (s):34 of 160
+21:13:45:Time Elapsed (s):35 of 160
+21:13:46:Time Elapsed (s):36 of 160
+21:13:47:Time Elapsed (s):37 of 160
+21:13:48:Time Elapsed (s):38 of 160
+21:13:49:Time Elapsed (s):39 of 160
+21:13:50:Time Elapsed (s):40 of 160
+21:13:51:Time Elapsed (s):41 of 160
+21:13:52:Time Elapsed (s):42 of 160
+21:13:53:Time Elapsed (s):43 of 160
+21:13:54:Time Elapsed (s):44 of 160
+21:13:55:Time Elapsed (s):45 of 160
+21:13:56:Time Elapsed (s):46 of 160
+21:13:57:Time Elapsed (s):47 of 160
+21:13:58:Time Elapsed (s):48 of 160
+21:13:59:Time Elapsed (s):49 of 160
+21:14:0:Time Elapsed (s):50 of 160
+21:14:2:Time Elapsed (s):51 of 160
+21:14:2:Time Elapsed (s):52 of 160
+21:14:3:Time Elapsed (s):53 of 160
+21:14:4:Time Elapsed (s):54 of 160
+21:14:5:Time Elapsed (s):55 of 160
+21:14:6:Time Elapsed (s):56 of 160
+21:14:7:Time Elapsed (s):57 of 160
+21:14:8:Time Elapsed (s):58 of 160
+21:14:9:Time Elapsed (s):59 of 160
+21:14:10:Time Elapsed (s):60 of 160
+21:14:11:Time Elapsed (s):61 of 160
+21:14:12:Time Elapsed (s):62 of 160
+21:14:13:Time Elapsed (s):63 of 160
+21:14:14:Time Elapsed (s):64 of 160
+21:14:15:Time Elapsed (s):65 of 160
+21:14:16:Time Elapsed (s):66 of 160
+21:14:17:Time Elapsed (s):67 of 160
+21:14:18:Time Elapsed (s):68 of 160
+21:14:19:Time Elapsed (s):69 of 160
+21:14:20:Time Elapsed (s):70 of 160
+21:14:22:Time Elapsed (s):71 of 160
+21:14:22:Time Elapsed (s):72 of 160
+21:14:23:Time Elapsed (s):73 of 160
+21:14:24:Time Elapsed (s):74 of 160
+21:14:25:Time Elapsed (s):75 of 160
+21:14:26:Time Elapsed (s):76 of 160
+21:14:27:Time Elapsed (s):77 of 160
+21:14:28:Time Elapsed (s):78 of 160
+21:14:29:Time Elapsed (s):79 of 160
+21:14:30:Time Elapsed (s):80 of 160
+21:14:31:Time Elapsed (s):81 of 160
+21:14:32:Time Elapsed (s):82 of 160
+21:14:33:Time Elapsed (s):83 of 160
+21:14:34:Time Elapsed (s):84 of 160
+21:14:35:Time Elapsed (s):85 of 160
+21:14:36:Time Elapsed (s):86 of 160
+21:14:37:Time Elapsed (s):87 of 160
+21:14:38:Time Elapsed (s):88 of 160
+21:14:39:Time Elapsed (s):89 of 160
+21:14:40:Time Elapsed (s):90 of 160
+21:14:41:Time Elapsed (s):91 of 160
+21:14:42:Time Elapsed (s):92 of 160
+21:14:43:Time Elapsed (s):93 of 160
+21:14:44:Time Elapsed (s):94 of 160
+21:14:45:Time Elapsed (s):95 of 160
+21:14:46:Time Elapsed (s):96 of 160
+21:14:47:Time Elapsed (s):97 of 160
+21:14:48:Time Elapsed (s):98 of 160
+21:14:49:Time Elapsed (s):99 of 160
+21:14:50:Time Elapsed (s):100 of 160
+21:14:52:Time Elapsed (s):101 of 160
+21:14:52:Time Elapsed (s):102 of 160
+21:14:53:Time Elapsed (s):103 of 160
+21:14:54:Time Elapsed (s):104 of 160
+21:14:55:Time Elapsed (s):105 of 160
+21:14:56:Time Elapsed (s):106 of 160
+21:14:57:Time Elapsed (s):107 of 160
+21:14:58:Time Elapsed (s):108 of 160
+21:14:59:Time Elapsed (s):109 of 160
+21:15:0:Time Elapsed (s):110 of 160
+21:15:1:Time Elapsed (s):111 of 160
+21:15:2:Time Elapsed (s):112 of 160
+21:15:3:Time Elapsed (s):113 of 160
+21:15:4:Time Elapsed (s):114 of 160
+21:15:5:Time Elapsed (s):115 of 160
+21:15:6:Time Elapsed (s):116 of 160
+21:15:7:Time Elapsed (s):117 of 160
+21:15:8:Time Elapsed (s):118 of 160
+21:15:9:Time Elapsed (s):119 of 160
+21:15:10:Time Elapsed (s):120 of 160
+21:15:12:Time Elapsed (s):121 of 160
+21:15:12:Time Elapsed (s):122 of 160
+21:15:13:Time Elapsed (s):123 of 160
+21:15:14:Time Elapsed (s):124 of 160
+21:15:15:Time Elapsed (s):125 of 160
+21:15:16:Time Elapsed (s):126 of 160
+21:15:17:Time Elapsed (s):127 of 160
+21:15:18:Time Elapsed (s):128 of 160
+21:15:19:Time Elapsed (s):129 of 160
+21:15:20:Time Elapsed (s):130 of 160
+21:15:21:Time Elapsed (s):131 of 160
+21:15:22:Time Elapsed (s):132 of 160
+21:15:23:Time Elapsed (s):133 of 160
+21:15:24:Time Elapsed (s):134 of 160
+21:15:25:Time Elapsed (s):135 of 160
+21:15:26:Time Elapsed (s):136 of 160
+21:15:27:Time Elapsed (s):137 of 160
+21:15:28:Time Elapsed (s):138 of 160
+21:15:29:Time Elapsed (s):139 of 160
+21:15:30:Time Elapsed (s):140 of 160
+21:15:32:Time Elapsed (s):141 of 160
+21:15:32:Time Elapsed (s):142 of 160
+21:15:33:Time Elapsed (s):143 of 160
+21:15:34:Time Elapsed (s):144 of 160
+21:15:35:Time Elapsed (s):145 of 160
+21:15:36:Time Elapsed (s):146 of 160
+21:15:37:Time Elapsed (s):147 of 160
+21:15:38:Time Elapsed (s):148 of 160
+21:15:39:Time Elapsed (s):149 of 160
+21:15:40:Time Elapsed (s):150 of 160
+21:15:41:Time Elapsed (s):151 of 160
+21:15:42:Time Elapsed (s):152 of 160
+21:15:43:Time Elapsed (s):153 of 160
+21:15:44:Time Elapsed (s):154 of 160
+21:15:45:Time Elapsed (s):155 of 160
+21:15:46:Time Elapsed (s):156 of 160
+21:15:47:Time Elapsed (s):157 of 160
+21:15:48:Time Elapsed (s):158 of 160
+21:15:49:Time Elapsed (s):159 of 160
+21:15:50:Time Elapsed (s):160 of 160
+21:15:51:Recording Ended 
+Data Recording Complete for a Duration of 160s
+Final Data Frame Size:(160000, 4)

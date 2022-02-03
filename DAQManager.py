@@ -52,7 +52,7 @@ class DAQManager():
 
     
     def ScanDAQ(self,total_samples_read,nebMode):
-
+        print(self.READ_ALL_AVAILABLE,self.timeout)
         read_result=self.hat.a_in_scan_read(self.READ_ALL_AVAILABLE,self.timeout)
         
         if read_result.hardware_overrun:

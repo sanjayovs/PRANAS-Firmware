@@ -1,0 +1,70 @@
+Log started on 1/21/2022
+Connected to Server at 17:23:7
+17:23:16:Device Configured
+UID: fdsfds
+Mode: BreathEmulate
+Trial: 1
+Duration: 105 seconds
+Sampling Rate: 1000
+Buffer Size: 1000
+User: Sanjay Sarma O V
+-----------------------------------
+Step Durations:20,30,10,15,10,10,10
+Nebulizer States:0, 1, 0, 1, 0, 1, 0
+Selected MCC 118 HAT device at address:0
+Device in continous scan mode
+Channels: 0, 1, 2,  
+Requested Scan Rate: 1000 
+Actual Scan Rate: 1000.0 
+17:23:17:Recording Started
+17:23:19:Time Elapsed (s):1 of 105
+17:23:20:Time Elapsed (s):2 of 105
+17:23:21:Time Elapsed (s):3 of 105
+17:23:22:Time Elapsed (s):4 of 105
+17:23:23:Time Elapsed (s):5 of 105
+17:23:24:Time Elapsed (s):6 of 105
+17:23:25:Time Elapsed (s):7 of 105
+17:23:26:Time Elapsed (s):8 of 105
+17:23:27:Time Elapsed (s):9 of 105
+17:23:28:Time Elapsed (s):10 of 105
+17:23:28:Nebulizer Switched, State:Off
+17:23:29:Time Elapsed (s):11 of 105
+17:23:30:Time Elapsed (s):12 of 105
+17:23:31:Time Elapsed (s):13 of 105
+17:23:32:Time Elapsed (s):14 of 105
+17:23:33:Time Elapsed (s):15 of 105
+17:23:34:Time Elapsed (s):16 of 105
+17:23:35:Time Elapsed (s):17 of 105
+17:23:36:Time Elapsed (s):18 of 105
+17:23:37:Time Elapsed (s):19 of 105
+17:23:38:Time Elapsed (s):20 of 105
+17:23:38:State Duration Actual Time:20 off 20
+17:23:39:Nebulizer Switched, State:On
+17:23:39:Time Elapsed (s):21 of 105
+17:23:40:Time Elapsed (s):22 of 105
+17:23:41:Time Elapsed (s):23 of 105
+17:23:42:Time Elapsed (s):24 of 105
+17:23:43:Time Elapsed (s):25 of 105
+17:23:44:Time Elapsed (s):26 of 105
+17:23:45:Time Elapsed (s):27 of 105
+17:23:46:Time Elapsed (s):28 of 105
+17:23:47:Time Elapsed (s):29 of 105
+17:23:48:Time Elapsed (s):30 of 105
+17:23:49:Time Elapsed (s):31 of 105
+17:23:50:Time Elapsed (s):32 of 105
+17:23:51:Time Elapsed (s):33 of 105
+17:23:52:Time Elapsed (s):34 of 105
+17:23:53:Time Elapsed (s):35 of 105
+17:23:54:Time Elapsed (s):36 of 105
+17:23:55:Time Elapsed (s):37 of 105
+17:23:56:Time Elapsed (s):38 of 105
+17:23:57:Time Elapsed (s):39 of 105
+17:23:58:Time Elapsed (s):40 of 105
+17:23:59:Time Elapsed (s):41 of 105
+17:24:0:Time Elapsed (s):42 of 105
+17:24:1:Time Elapsed (s):43 of 105
+17:24:2:Time Elapsed (s):44 of 105
+17:24:3:Time Elapsed (s):45 of 105
+17:24:4:Time Elapsed (s):46 of 105
+17:24:5:Time Elapsed (s):47 of 105
+17:24:6:Time Elapsed (s):48 of 105

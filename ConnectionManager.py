@@ -96,7 +96,10 @@ class ConnectionManager:
                         sleep(0.4)
                         self.portalConnection.sendall(b'Configuration Complete!')
                         self.currentService.deviceFlags.CONFIGURE_FLAG=True
- 
+
+                    
+
+
                     if currentRequest=='Stop':
                         self.currentService.deviceFlags.STOP_FLAG=True
                         self.currentService.deviceFlags.START_FLAG=False

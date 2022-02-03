@@ -1,0 +1,87 @@
+Log started on 1/21/2022
+Connected to Server at 17:15:40
+17:15:53:Device Configured
+UID: we
+Mode: BreathEmulate
+Trial: 1
+Duration: 105 seconds
+Sampling Rate: 1000
+Buffer Size: 1000
+User: Sanjay Sarma O V
+-----------------------------------
+Step Durations:20,30,10,15,10,10,10
+Nebulizer States:0,1,0,1,0,1,0
+Selected MCC 118 HAT device at address:0
+Device in continous scan mode
+Channels: 0, 1, 2,  
+Requested Scan Rate: 1000 
+Actual Scan Rate: 1000.0 
+17:15:54:Recording Started
+17:15:55:Nebulizer Switched, State:Off
+17:15:55:Time Elapsed (s):1 of 105
+17:15:57:Time Elapsed (s):2 of 105
+17:15:57:Time Elapsed (s):3 of 105
+17:15:58:Time Elapsed (s):4 of 105
+17:16:0:Time Elapsed (s):5 of 105
+17:16:0:Time Elapsed (s):6 of 105
+17:16:2:Time Elapsed (s):7 of 105
+17:16:2:Time Elapsed (s):8 of 105
+17:16:3:Time Elapsed (s):9 of 105
+17:16:5:Time Elapsed (s):10 of 105
+17:16:5:Time Elapsed (s):11 of 105
+17:16:6:Time Elapsed (s):12 of 105
+17:16:8:Time Elapsed (s):13 of 105
+17:16:8:Time Elapsed (s):14 of 105
+17:16:9:Time Elapsed (s):15 of 105
+17:16:10:Time Elapsed (s):16 of 105
+17:16:11:Time Elapsed (s):17 of 105
+17:16:13:Time Elapsed (s):18 of 105
+17:16:13:Time Elapsed (s):19 of 105
+17:16:14:Time Elapsed (s):20 of 105
+17:16:15:State Duration Actual Time:20 off 20
+17:16:15:Time Elapsed (s):21 of 105
+17:16:16:Time Elapsed (s):22 of 105
+17:16:18:Time Elapsed (s):23 of 105
+17:16:19:Time Elapsed (s):24 of 105
+17:16:19:Time Elapsed (s):25 of 105
+17:16:21:Time Elapsed (s):26 of 105
+17:16:21:Time Elapsed (s):27 of 105
+17:16:22:Time Elapsed (s):28 of 105
+17:16:24:Time Elapsed (s):29 of 105
+17:16:24:Time Elapsed (s):30 of 105
+17:16:25:Time Elapsed (s):31 of 105
+17:16:27:Time Elapsed (s):32 of 105
+17:16:27:Time Elapsed (s):33 of 105
+17:16:29:Time Elapsed (s):34 of 105
+17:16:29:Time Elapsed (s):35 of 105
+17:16:30:Time Elapsed (s):36 of 105
+17:16:32:Time Elapsed (s):37 of 105
+17:16:32:Time Elapsed (s):38 of 105
+17:16:33:Time Elapsed (s):39 of 105
+17:16:35:Time Elapsed (s):40 of 105
+17:16:35:Time Elapsed (s):41 of 105
+17:16:37:Time Elapsed (s):42 of 105
+17:16:37:Time Elapsed (s):43 of 105
+17:16:38:Time Elapsed (s):44 of 105
+17:16:40:Time Elapsed (s):45 of 105
+17:16:40:Time Elapsed (s):46 of 105
+17:16:42:Time Elapsed (s):47 of 105
+17:16:43:Time Elapsed (s):48 of 105
+17:16:43:Time Elapsed (s):49 of 105
+17:16:45:Time Elapsed (s):50 of 105
+17:16:46:Time Elapsed (s):51 of 105
+17:16:46:Time Elapsed (s):52 of 105
+17:16:48:Time Elapsed (s):53 of 105
+17:16:48:Time Elapsed (s):54 of 105
+17:16:49:Time Elapsed (s):55 of 105
+17:16:50:Time Elapsed (s):56 of 105
+17:16:52:Time Elapsed (s):57 of 105
+17:16:53:Time Elapsed (s):58 of 105
+17:16:53:Time Elapsed (s):59 of 105
+17:16:54:Time Elapsed (s):60 of 105
+17:16:56:Time Elapsed (s):61 of 105
+17:16:56:Time Elapsed (s):62 of 105
+17:16:58:Time Elapsed (s):63 of 105
+17:16:58:Time Elapsed (s):64 of 105
+17:16:59:Time Elapsed (s):65 of 105
+17:17:1:Time Elapsed (s):66 of 105

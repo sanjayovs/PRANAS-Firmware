@@ -1,6 +1,6 @@
 from DataManager import DataFileManage, LogFileManage
 from ConnectionManager import ConnectionManager
-from ModeManager import RecordMode 
+from ModeManager import RecordMode, BreathEmulationMode 
 from DataClasses import TrialParameters,DeviceFlags
 from datetime import datetime
 import time
@@ -39,8 +39,12 @@ class ServiceManager:
                                 self.logFileManage.WriteLog('Buffer Size: '+ str(self.trialParameters.BUFFER_SIZE),0)
                                 self.logFileManage.WriteLog('User: '+ self.trialParameters.USER,0)
                                 self.logFileManage.WriteLog('-----------------------------------',0)
-                                self.currentMode=RecordMode(self)
-                                self.deviceFlags.CONFIGURE_FLAG=False
+                                if self.trialParameters.MODE=="BreathEmulate":
+                                        self.currentMode=BreathEmulationMode(self)
+                                        self.deviceFlags.CONFIGURE_FLAG=False
+                                else:
+                                        self.currentMode=RecordMode(self)
+                                        self.deviceFlags.CONFIGURE_FLAG=False
  
                         
                         if self.deviceFlags.START_FLAG and self.deviceFlags.CONNECTION_FLAG:
@@ -70,37 +74,9 @@ class ServiceManager:
                         return str(dt_now.month)+'/'+str(dt_now.day)+'/'+str(dt_now.year) 
                 if tpe==3:
                         return str(10000000000*dt_now.year+100000000*dt_now.month+1000000*dt_now.day+10000*dt_now.hour+100*dt_now.minute+dt_now.second)                
+              
 
 
-
-                """ while True:
-                        if thisConnection.ConnectionStatus==False:
-                                thisConnection=ConnectionManager(self.PORT_Server,self.IP_Server,self.thisLogFile) # Making a new connection if there was a fault
-                                self.thisConnection=thisConnection
-                        else:
-                                if   thisConnection.ConfigureFlag:
-                                        thisConnection.ConfigureFlag=False
-                                        thisConnection.StopFlag=False
-                                        print("Configuration Complete Waiting for Start")
-                                elif thisConnection.StartFlag:
-                                        self.thisLogFile.WriteLog("Configured at "+self.thisLogFile.GetCurrentTime(),True)
-                                        if thisConnection.MODE == 'Breath' or thisConnection.MODE=='Static':
-                                                self.AnalyzeMode(thisConnection.MODE,thisConnection.TRIAL)
-                                elif thisConnection.StopFlag:
-                                        print("Stop Received")
-
-        def AnalyzeMode(self,ModeType,trials):
-                if ModeType=="Breath":
-                        self.thisConnection.RECORD_DURATION=180 # 180 seconds for each trial
-                elif ModeType=="Static":
-                        self.thisConnection.RECORD_DURATION=180 # 180 seconds of recording
-                        #self.FILE_NAME=str(self.UID)+'_T'+str(self.TRIAL)+'_'+self.MODE
-                self.thisConnection.NameFile(str(trials),ModeType)
-                self.thisMode=RecordMode(self.thisConnection,self.thisLogFile)
-                self.thisConnection.StartFlag=False
-                self.thisMode.Run()                     
-
- """
 
 
 
