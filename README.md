@@ -1,3 +1,3 @@
 ![](https://github.com/sanjayovs/BreathMonitoring-Device-Firmware/blob/master/LatestBanner_Firmware.png "Banner Firmware")
 
-# [Wiki Page](https://github.com/sanjayovs/BreathMonitoring-Device-Firmware/wiki)
+<h1 align="center"><a href = "https://github.com/sanjayovs/BreathMonitoring-Device-Firmware/wiki"> Click Here for Home Page </a>
